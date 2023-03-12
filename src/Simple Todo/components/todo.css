@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&family=Inter:wght@100;300;400;500;600;700&family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Lora:ital,wght@1,400;1,500;1,600;1,700&family=Montserrat:wght@100;400;500;600;700&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,600&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,300;1,400&family=Quintessential&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&family=Roboto:ital,wght@0,400;0,500;0,700;1,400&family=Varela&family=Varela+Round&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+
+
+.container1{
+    font-family: 'Poppins', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background: #4b6cb7;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #182848, #4b6cb7);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #182848, #4b6cb7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.container1 .todoWrapper{
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+    gap: 2rem;
+    padding-bottom: 4rem;
+    border-radius: 3px;
+    box-shadow: 0px 0px 52px -3px crimson,0px 0px 15px -3px purple;
+ 
+background: rgba(255, 255, 255, 0.04);
+border-radius: 16px;
+
+backdrop-filter: blur(6.2px);
+-webkit-backdrop-filter: blur(6.2px);
+border: 1px solid rgba(248, 237, 237, 0.174);
+    height: max-content;
+ 
+    width: 35rem;
+
+}
+
+.todoWrapper::-webkit-scrollbar{
+    display: none;
+}
+
+.container1 .todoWrapper .heading{
+ text-align: center;
+ padding: 1rem 0rem;
+ padding-top: 1.6rem;
+ letter-spacing: 3px;
+ color: white;
+
+}
+.container1 .todoWrapper .inputWrapper{
+    display: flex;
+    gap: 1rem;
+    margin: 0 auto;
+
+}
+.container1 .todoWrapper .inputWrapper input{
+    margin: 0 auto;
+    padding: 0.6rem 0.6rem;
+    border-radius: 10px;
+    outline: none;
+    font-size: 1rem;
+    width: 16rem;
+    color: #4c4747;
+    border: none;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+
+}
+.container1 .todoWrapper .inputWrapper .btn-add{
+   padding: 0.6rem 1rem;
+   border-radius: 10px;
+   outline: none;
+   border: 1px solid transparent;
+   background-color:  #d4244d ;
+   color: white;
+   box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+   cursor: pointer;
+   transition: 0.4s ease;
+}
+
+
+.container1 .todoWrapper .inputWrapper .btn-add:active{
+
+   border: 1px solid transparent;
+   background-color: rgb(123, 11, 24);
+   color: white;
+
+}
+
+.data_wrapper{
+    display: flex;
+    align-items: center;
+    width: 80%;
+    padding: 0.5rem 0.5rem;
+    margin: 0.5rem 0rem;
+    margin: -5px auto;
+    justify-content: space-between;
+    box-shadow: 0px 0px 23px -7px  black;
+    border: 1px solid white;
+    border-radius: 7px;
+     color: white;
+}
+
+.data_wrapper .btn_details{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+
+.data_wrapper .btn_details .left{
+    background: rgb(211, 99, 13);
+}
+.data_wrapper .btn_details .left:active{
+    background: rgb(169, 81, 13);
+}
+.data_wrapper .btn_details .right{
+    background-color: red;
+}
+.data_wrapper .btn_details .right:active{
+    background-color: rgb(145, 18, 18);
+}
+
+
+.data_wrapper .btn_details .btn_wrapper{
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    padding: 0.4rem 0.3rem;
+ 
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.data_wrapper .btn_details .btn_wrapper i{
+ font-size: 0.9rem;
+}
+
+.data_wrapper .btn_details .btn_wrapper button{
+    background: none;
+    border: none;
+    font-size: 0.9rem;
+    color: white;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+
+.data_wrapper .btn_details .btn_wrapper .white{
+color: white;
+}
+
+
+
+@media (max-width : 768px ) {
+
+    .container1 .todoWrapper{
+        display: flex;
+        flex-direction: column;
+        width: 20rem;
+    }
+
+    
+    .container1 .todoWrapper .inputWrapper{
+        gap: 0.5rem;
+    }
+
+    .container1 .todoWrapper .inputWrapper input{
+        display: flex;
+        justify-content: center;
+        width: 13rem;
+    }
+
+    div.data_wrapper{
+        flex-direction: column;
+        height: 6rem;
+        padding: 0.7rem 0.5rem;
+    }
+    
+}
+
+
+.clear_all{
+    display: flex;
+    width: 100%;
+    margin-top: 1rem;
+    justify-content: center;
+   
+}
+
+
+.clear_all .deleteAll{
+    cursor: pointer;
+   padding: 1rem 2rem;
+   color: white;
+   width: 66%;
+    border: 1px solid rgb(220, 130, 148);
+    background: none;
+   border-radius: 7px;
+   transition: 0.3s ease;
+   
+}
+.clear_all .deleteAll:hover{
+   
+    background-color: rgb(225, 69, 100);
+    border: 1px solid transparent;
+
+   
+}
